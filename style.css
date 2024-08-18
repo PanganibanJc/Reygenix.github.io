@@ -1,0 +1,320 @@
+/*
+Theme Name: My Custom Theme
+Theme URI: http://example.com/my-custom-theme
+Author: Your Name
+Author URI: http://example.com
+Description: A custom theme with a stylish header, body content, and footer.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-custom-theme
+*/
+
+
+
+/* General styles */
+body {
+    margin: 0; /* Remove default margin from body */
+}
+
+/* Header styles */
+div.header {
+    width: 100%; /* Adjust the width to fit the parent container */
+    height: 520px; /* Keep the height as needed */
+    background-image: url('images/headerimage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire div without being cut off */
+    background-color: rgba(8, 0, 45, 0.544); /* Faint black overlay with 40% opacity */
+    background-blend-mode: overlay; /* Blends the color with the image */
+}
+
+.headerlogo {
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 85px;
+    width: 50px;
+}
+
+.hLink {
+
+    text-decoration: none;
+}
+
+
+/* Header buttons styles */
+ .homebutton, .shopbutton, .teambutton, .contactbutton {
+    font-family: Arial Black, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -40px;
+    position: absolute;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effects for buttons */
+.shopbutton:hover, .teambutton:hover, .contactbutton:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+/* Specific positions for buttons */
+
+
+
+/* Dropdown menu styles */
+/* Basic styles for the shop container */
+.home-container {
+    position: relative; /* Necessary for positioning the dropdown */
+    display: inline-block; /* Allows for the dropdown to be positioned relative to the button */
+}
+
+/* Styles for the shop button */
+.teambutton {
+    font-family: Arial Black, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -56px;
+    margin-left: 480px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    padding: 20px; /* Add some padding for better appearance */
+}
+
+/* Styles for the dropdown menu */
+.home-dropdown {
+    
+    margin-left: 410px;
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the shop container */
+    background-color: #ffffff; /* White background for dropdown */
+    border: 1px solid #ddd; /* Light border around the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    top: 100%; /* Position it below the shop button */
+    width: 250px; /* Set a fixed width for the dropdown */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles for dropdown links */
+.home-dropdown a {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    font-family: Arial Black, sans-serif;
+    color: #000437;
+    font-size: 15px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for dropdown links */
+.home-dropdown a:hover {
+    text-decoration: none;
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Show the dropdown when hovering over the shop container */
+.home-container:hover .home-dropdown {
+    
+    display: block; /* Show the dropdown */
+}
+
+/* Additional hover effect for shop button */
+.homebutton:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+.homebutton {
+    margin-left: 300px;
+}
+
+
+.contactbutton {
+    margin-left: 850px;
+}
+
+/* Dropdown menu styles */
+/* Basic styles for the shop container */
+.shop-container {
+    
+    position: relative; /* Necessary for positioning the dropdown */
+    display: inline-block; /* Allows for the dropdown to be positioned relative to the button */
+}
+
+/* Styles for the shop button */
+.shopbutton {
+    font-family: Arial Black, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: -56px;
+    margin-left: 320px;
+    position: absolute;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    padding: 20px; /* Add some padding for better appearance */
+}
+
+/* Styles for the dropdown menu */
+.shop-dropdown {
+    
+    margin-left: 235px;
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the shop container */
+    background-color: #ffffff; /* White background for dropdown */
+    border: 1px solid #ddd; /* Light border around the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    top: 100%; /* Position it below the shop button */
+    width: 250px; /* Set a fixed width for the dropdown */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles for dropdown links */
+.shop-dropdown a {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    font-family: Arial Black, sans-serif;
+    color: #000437;
+    font-size: 15px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for dropdown links */
+.shop-dropdown a:hover {
+    text-decoration: none;
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Show the dropdown when hovering over the shop container */
+.shop-container:hover .shop-dropdown {
+    
+    display: block; /* Show the dropdown */
+}
+
+/* Additional hover effect for shop button */
+.shopbutton:hover {
+    color: #FFD700; /* Change text color on hover (example: gold) */
+}
+
+
+/* Body image styles */
+div.bodyimage {
+    margin-top: 3px;
+    width: 100%; /* Adjust the width to fit the parent container */
+    height: 2500px; /* Keep the height as needed */
+    position: absolute;
+    background-image: url('images/Steps for Effective Online Marketing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire div without being cut off */
+}
+
+/* Body content styles */
+
+.cstmjersey, .cstmpolo, .cstmtarp, .cstmid {
+
+    text-decoration: none   ;
+}
+
+.bcstmjersey, .bcstmpolo, .bcstmtarp, .bcstmid {
+ 
+    font-family: Arial Black, sans-serif;
+    color: #FFD700;
+    font-size: 30px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.bcstmjersey:hover, .bcstmpolo:hover, .bcstmtarp:hover, .bcstmid:hover {
+    color: #ffffff; /* Change text color on hover */
+}
+
+.bcstmjersey {
+    margin-top: 310px;
+    margin-left: 200px;
+}
+
+.bcstmpolo {
+    margin-top: 560px;
+    margin-left: 200px;
+}
+
+.bcstmtarp {
+    margin-top: 535px;
+    margin-left: 200px;
+}
+
+.bcstmid {
+    margin-top: 460px;
+    margin-left: 200px;
+}
+
+/* Image styles */
+
+.jerseyimage a  , .poloimage a, .tarpimage a, .idimage a {
+   text-decoration: none;
+}
+
+
+
+.jerseyimage, .poloimage, .tarpimage, .idimage {
+    position: absolute;
+    transition: transform 0.4s ease; /* Smooth transition for the transform effect */
+    padding: 0;
+}
+
+.jerseyimage {
+    margin-top: 200px;
+    margin-left: 800px;
+    width: 500px;
+}
+
+.jerseyimage:hover {
+    transform: scale(1.08); /* Slightly enlarge the image */
+}
+
+.poloimage {
+    margin-top: 330px;
+    margin-left: 750px;
+    width: 500px;
+}
+
+.poloimage:hover {
+    transform: scale(1.08); /* Slightly enlarge the image */
+}
+
+.tarpimage {
+    margin-top: 265px;
+    margin-left: 850px;
+    width: 500px;
+}
+
+.tarpimage:hover {
+    transform: scale(1.08); /* Slightly enlarge the image */
+}
+
+.idimage {
+    margin-top: 240px;
+    margin-left: 770px;
+    width: 500px;
+}
+
+.idimage:hover {
+    transform: scale(1.08); /* Slightly enlarge the image */
+}
+
+/* Footer styles */
+.footer {
+    position: relative;
+    margin-top: 2507px; /* 3px margin from the top, ensuring it's below the body image */
+    width: 100%; /* Adjust the width to fit the parent container */
+    height: 120px; /* Keep the height as needed */
+    background-color: #ffd700;
+}
